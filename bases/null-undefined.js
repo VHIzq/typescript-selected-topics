@@ -1,4 +1,5 @@
 "use strict";
 (() => {
-    let isActive = null;
+    //let isActive: boolean = null;
+    null !== undefined;
 })();
