@@ -1,33 +1,50 @@
-// Funciones Básicas
-function sumar( a: number, b: number ){
-  return a + b;
-}
-
-const contar = ( heroes: string[] ) => {
-  return heroes.length;
-}
-const superHeroes: string[] = ["Flash", "Arrow", "Superman", "Linterna Verde"];
-contar(superHeroes);
-
-//Parametros por defecto
-const llamarBatman = ( llamar: boolean ): void => {
-  if( llamar ){
-    console.log("Batiseñal activada");
+(() => {
+  // Funciones Básicas
+  function sumar(a: number, b: number) {
+    return a + b;
   }
-}
 
-llamarBatman(true);
+  const contar = (heroes: string[]) => {
+    return heroes.length;
+  };
+  const superHeroes: string[] = [
+    'Flash',
+    'Arrow',
+    'Superman',
+    'Linterna Verde',
+  ];
+  contar(superHeroes);
 
-// Rest?
-const unirheroes = ( ...personas: string[] ): string => {
-  return personas.join(", ");
-}
+  //Parametros por defecto
+  const llamarBatman = (llamar: boolean): void => {
+    if (llamar) {
+      console.log('Batiseñal activada');
+    }
+  };
 
+  llamarBatman(true);
 
-// Tipo funcion
-const noHaceNada = ( numero: number, texto: string, booleano: boolean, arreglo: string[] )=> {}
+  // Rest?
+  const unirheroes = (...personas: string[]): string => {
+    return personas.join(', ');
+  };
 
-// Crear el tipo de funcion que acepte la funcion "noHaceNada"
-let noHaceNadaTampoco: Function;
-noHaceNadaTampoco = (n: number, t: string, b: boolean, arr: string[]): void => {}
+  // Tipo funcion
+  const noHaceNada = (
+    numero: number,
+    texto: string,
+    booleano: boolean,
+    arreglo: string[]
+  ) => {};
+
+  // Crear el tipo de funcion que acepte la funcion "noHaceNada"
+  let noHaceNadaTampoco: Function;
+  noHaceNadaTampoco = (
+    n: number,
+    t: string,
+    b: boolean,
+    arr: string[]
+  ): void => {};
+})()
+
 
