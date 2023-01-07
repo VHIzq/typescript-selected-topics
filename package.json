@@ -1,0 +1,21 @@
+{
+  "name": "fh-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VHIzq/typescript-selected-topics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VHIzq/typescript-selected-topics/issues"
+  },
+  "homepage": "https://github.com/VHIzq/typescript-selected-topics#readme"
+}
