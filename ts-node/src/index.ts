@@ -1,18 +1,7 @@
+import { getPokemon } from "./generics/get-pokemon";
+import { GenerationV } from './interfaces/pokemon';
 
-import { Hero  } from "./classes/Hero";
-import { Hero as SuperHero, Villain } from "./classes/Hero";
-//import * as HeroClasses from "./classes/Hero";
-import powers from './data/powers';
-
-
-const BB = new Hero('gar', 2, 22);
-
-console.log(BB);
-console.log(BB.powers);
-
-
-
-
-
-
-
+getPokemon(3)
+  .then(pokemon => console.log( pokemon.sprites.front_default ))
+  .catch(error => console.log(error))
+  .finally(() => console.log('FIn de getPokemon'))
